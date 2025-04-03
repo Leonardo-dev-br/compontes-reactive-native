@@ -1,11 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import Avatar from './Avatar';
+import ToDoList from './ToDoList';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Avatar imageUrl='http://www.github.com.br/Leonardo-dev-br.png' />
+      <ToDoList 
+        task="Sample Task" 
+        completed={false} 
+        onToggle={() => console.log('Task toggled')} 
+      />
     </View>
   );
 }
