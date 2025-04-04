@@ -5,7 +5,7 @@ import ToDoList from './ToDoList';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Avatar imageUrl='http://www.github.com.br/Leonardo-dev-br.png' />
+      <Avatar imageUrl='http://www.github.com/Leonardo-dev-br.png' />
       <ToDoList 
         task="Sample Task" 
         completed={false} 
