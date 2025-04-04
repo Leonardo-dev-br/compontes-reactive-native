@@ -6,11 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Avatar imageUrl='http://www.github.com/Leonardo-dev-br.png' />
-      <ToDoList 
-        task="Sample Task" 
-        completed={false} 
-        onToggle={() => console.log('Task toggled')} 
-      />
+      <ToDoList />
     </View>
   );
 }
